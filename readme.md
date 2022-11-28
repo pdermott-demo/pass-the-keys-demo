@@ -30,9 +30,9 @@ file.
 
 ### Testing
 Tests can be run in the usual manner via `python manage.py test` coverage is currently 93%, I had hoped to get this to 
-100% but I was running out of time.
+100%, sadly I ran out of time.
 
 ---
-Thank you for your time on this so far, I look forward to discussing this work and potential improvements in upcoming
-interviews.
+Thank you for your time on this so far, I look forward to discussing this work and potential improvements in an
+upcoming interview.
 
