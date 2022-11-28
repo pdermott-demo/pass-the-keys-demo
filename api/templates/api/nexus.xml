@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<outcodes
+    nexus="{{ outcode }}"
+    listing-count="{{ outcode.listings.count }}"
+    average-daily-price="{{ outcode.get_average_daily_price }}">
+    {{ outcode.name }}
+    {% for nearby_code in close_codes %}
+        <outcode
+            listing-count="{{ nearby_code.listing_count }}"
+            average-daily-price="{{ nearby_code.avg_price }}"
+            distance="{{ nearby_code.distance }} miles">
+        {{ nearby_code.name }}
+        </outcode>
+    {% endfor %}
+</outcodes>
